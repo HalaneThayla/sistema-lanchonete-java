@@ -4,16 +4,15 @@ public class Produto {
     private String nome;
     private double valor;
 
-
     public Produto(int id, String nome, double valor) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
     }
 
-    public Produto(){
-
+    public Produto() {
     }
+
     public int getId() {
         return id;
     }
@@ -36,5 +35,10 @@ public class Produto {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + " | Nome: " + nome + " | Valor: R$ " + valor;
     }
 }
